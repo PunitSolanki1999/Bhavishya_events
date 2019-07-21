@@ -1,0 +1,95 @@
+
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+<style>
+        .gallery{
+                margin:10px 50px;
+                width:95%;
+               
+               
+                
+        }
+        .gallery img{
+                transition:0.3s;
+
+                width:220px;
+                height:140px;
+                margin-right:10px;
+                margin-bottom:10px;
+                border:1px solid white;
+        }
+        .gallery video{
+                transition:1s;
+                
+                width:220px;
+                height:140px;
+               
+                
+                margin-right:10px;
+                margin-bottom:10px;
+                border:1px solid white;
+               
+                
+                
+        }
+        .gallery img:hover{
+                filter: drop-shadow(8px 8px 10px purple);
+               
+        }
+        .gallery video:hover{
+                filter: drop-shadow(8px 8px 10px purple);
+               
+        }
+        .gallery_view{
+                
+                background-color: transparent;
+                
+                padding-right: 0px; 
+                margin:0px;
+
+        }
+        
+        @media only screen and (min-width: 200px) and (max-width: 540px) {
+        .gallery{
+                margin-right:-20px;
+                margin-left:10px;
+        }
+        .gallery img {
+                margin-bottom:10px;
+               width:45%;
+               } 
+        .gallery video {
+                margin-bottom:10px;
+               width:45%;
+               } 
+        }
+        
+        
+</style>
+<section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60">
+<div class='gallery_view'> 
+<div class='gallery'>
+{% if user != None %}
+
+{% for i in user %}
+{% if '.jpg' in i.party_file.url or '.png' in i.party_file.url or '.jpeg' in i.party_file.url %}
+
+<a href="{% url 'events:theme-party-delete-confirm' pk=i.pk %}"  ><img src={{i.party_file.url}} ></a>
+{% endif %}
+{% if '.mp4' in i.party_file.url or '.mkv' in i.party_file.url or  '.avchd' in i.party_file.url or '.mov' in i.party_file.url or '.avi' in i.party_file.url %}
+
+<a href="{% url 'events:theme-party-delete-confirm' pk=i.pk %}"  >
+        <img src='{% static "img/core-img/play.png" %}' <img src={{i.party_file.url}}>
+</a>
+        
+
+        {% endif %}
+{% endfor %}
+
+{% endif %}
+
+</div>
+</div>
+</section>
+{% endblock %}

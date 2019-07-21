@@ -1,0 +1,249 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+<style>
+    .classy-nav-container .classy-navbar .classynav ul li.services a {
+            color: #df42b1;
+        }
+    .img{
+        width:80%;
+        height:5%;
+        margin-bottom:10px;
+        transition:1.3s;
+    }
+    .management{
+        padding:10px;
+        width:100%;
+        text-align:center;
+        border:1px solid white;
+        background:  #111343;
+        transition:1.3s;
+    }
+    .service-details{
+        margin-top:10px;
+        border:1px solid white;
+        transition:1.3s;
+       
+    }
+    .service-details .invitation-card{
+        width:100%;
+        z-index:-1;
+        transition:1.3s;
+    }
+    .service-details .invitation-card img{
+        -webkit-transition-duration: 1500ms;
+        -o-transition-duration: 1500ms;
+        transition-duration: 1500ms;
+        width: 25%; 
+        margin-left:10px;
+        transition:1.3s;
+    }
+    .service-details .invitation-card p{
+        font-style:None;
+        font-weight:0;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        margin-left:100px;
+        transition:1.3s;
+    }
+    .img-service{
+        width:70%;
+        margin-left:20%;
+        transition:1.3s;
+        margin-bottom:-80px; 
+    }
+    .img-service-left{
+        width:70%;
+        margin-left:10%;
+        transition:1.3s;
+        margin-bottom:-80px; 
+    }
+    @media only screen and (min-width: 100px) and (max-width: 800px) {
+        .img-service{
+        width:100%;
+        margin-top:-60px;
+        margin-left:0%;
+        margin-bottom:-60px;
+    } 
+    .img-service-left{
+        width:100%;
+        
+        margin-left:0%;
+        margin-bottom:-40px;
+    }    
+    
+    }
+</style>
+<section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" >
+    <div class="container" style="margin-top:40px; margin-bottom:100px;">
+        <div class='management' >
+        <img class= 'img' src="{% static 'img/bg-img/event_manager.jpeg' %}">
+        <h5 style="color:white; ">Event Manager</h5>
+    </div>
+    <div class="service-details">
+        
+    
+    <section class="about-us-countdown-area " style="padding:50px; padding-left:5%;" id="about">
+        <div class="container" >
+            
+                <!-- About Content -->
+                
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>We surely welcome your orders for invitation cards.</p> <p>These cards will absolutely match up to your choice and will be perfect for the occassion.</p></h6>
+                        
+                    </div>
+                </div>
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6" >
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service'  src="{% static 'img/bg-img/invitation_card.jpg' %}" alt="">
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6">
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service-left'  src="{% static 'img/bg-img/catreen.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:-60px;">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" id='left-img' style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"Good food tastes better"</p><p>It's a matter of health, so we provide our catering services with full hygiene and great taste. Our Services are fully reliable.</p></h6>
+                        
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"The most important thing is that all the God's and Goddesses are also united in the Marriage."</p><p>Marriage is for spiritual growth and a way of learning many things in life through experience. We assure that all the pooja samagri related to marriage are available so that the couple get blessings of the God's and Goddesses.</p></h6>
+                        
+                    </div>
+                </div>
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6" >
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service'  src="{% static 'img/bg-img/pooja_samagri.jpg' %}" alt="">
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6">
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service-left'  src="{% static 'img/bg-img/lighting.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:-60px;">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" id='left-img' style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"A strand of lights that can create a magical effect."</p><p>It really is that impactful. We like to think of lighting as the jewellery of a space—just as a certain mix of accessories can make an outfit, the right lights will make your reception unforgettable. </p></h6>
+                        
+                    </div>
+                </div>  
+            </div>
+
+
+            
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"You look great today" This is something we all love to hear.</p>
+                        <p>For this you need to get ready according to the occassion. Choosing our parlour services will make you look impressive and of course ready to recieve compliments.</p></h6>
+                        
+                    </div>
+                </div>
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6" >
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service'  src="{% static 'img/bg-img/mehendi_and_palour.jpg' %}" alt="">
+                    </div>
+                </div> 
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6">
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service-left'  src="{% static 'img/bg-img/photograhy.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:-60px;">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" id='left-img' style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>Special moments in your life are worth cherishing and deserve to be captured.</p>
+                        <p>For this we provide professional photographers for creating your memories more brigther.</p></h6>
+                        
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"None of the occassions are complete without music."</p>
+                        <p>For making your event more exciting. From the old 90's to the trending music we always come up with the  music suitable for all age groups.</p></h6>
+                        
+                    </div>
+                </div>
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6" >
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service'  src="{% static 'img/bg-img/dhol.jpg' %}" alt="">
+                    </div>
+                </div> 
+            </div>
+
+            
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6">
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service-left'  src="{% static 'img/bg-img/entry.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:-60px;">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" id='left-img' style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"A nicely designed entry walkway sets the mood for the evening, and lends the perfect start to your wedding celebrations."</p><p>Oh, and think about the perfect backdrop for those countless wedding pictures that will adorn your bedside table. So we decide to give you a look at our favourites this season!</p></h6>
+                        
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="row align-items-center align-items-center" style="border:2px solid white; padding:20px; "  >
+                <div class="col-12 col-md-6">
+                    <div class="about-content-text mb-80" style="text-decoration-line: none;">
+                        <h6 class="wow fadeInUp" style="color:white; margin-bottom:-80px;  " data-wow-delay="300ms"><p>"People look for beautiful place and we make the place beautiful."</p><p>Watching up for you taste on decorations we make all our efforts to make the place beautiful and exactly the same as you imagination.</p></h6>
+                        
+                    </div>
+                </div>
+                <!-- About Thumb -->
+                <div class="col-12 col-md-6" >
+                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                        <img class='img-service'  src="{% static 'img/bg-img/groom_entry.jpg' %}" alt="">
+                    </div>
+                </div> 
+            </div>
+
+
+
+           
+           
+            
+
+        </div>
+    </div>
+</section>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+
+<section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60">
+        <div class="container" style="margin-top:20px; margin-bottom:80px; background-color:white; opacity:0.9;padding-top:10px; padding-left:40px;
+        padding-bottom:20px; padding-right:40px;" >
+            <h1>Messages:</h1>
+        {% if no_user == none %}
+            <h3>No message</h3>
+        {% endif %}
+        <table style="border:2px solid black; width:100%;  ">
+        {% if user != None %}
+        
+                {% for i in result %}
+                <tr style="border:2px solid black; margin-left:70px;">
+                        
+                       <td style="padding-left:20px; padding-top:5px; padding-bottom:5px;">
+                        {% if i.seen == False %}
+                        <a href="{% url 'events:request-info' pk=i.pk %} " style="color:red; letter-spacing: 1px; ">
+                        {% else %}
+                        <a href="{% url 'events:request-info' pk=i.pk %} " style="color:black; letter-spacing: 1px; ">
+
+                        {% endif %}
+                        {{ i.first_name|title }} {{ i.last_name|title }}</a>
+                       </td>
+                </tr>
+                        
+                {% endfor %}
+        {% endif %}
+</table>
+</div>
+</section>
+{% endblock %}

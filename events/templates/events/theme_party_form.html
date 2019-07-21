@@ -1,0 +1,17 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60">
+        <div class="container" style="margin-top:20px; margin-bottom:80px;" >
+            <a class="btn confer-btn m-2" href="{% url 'events:logout' %}" style=" position:absolute; left:80%;">Logout</a>
+            <a class="btn confer-btn m-2" href="{% url 'events:upload' %}" style=" position:absolute; left:65%;">Back</a>
+            <form acion='.' method="POST" enctype="multipart/form-data">{% csrf_token %}
+                <h3>Birthday Party <br> Photo Uploadation:</h3><br>
+                {{ form.as_p }}
+                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
+                    <input class="btn confer-btn m-2"  style="border:2px solid purple;" type='submit' value='Submit'>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

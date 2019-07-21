@@ -1,0 +1,21 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+
+
+
+<section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60">
+    <div class="container" style="margin-top:20px; margin-bottom:80px; color:black; background-color:white;  border-radius:5px; padding-top:10px; padding-bottom:10px; padding-left:20px;" >
+        {% if user != None %}
+            
+            <h2 style="color:black; margin-bottom:10px;">User Request Detail:</h2>
+            <strong>Name: </strong>{{ user.first_name }} {{ user.last_name }}<br>
+            <strong>Gmail: </strong>{{ user.gmail }}<br>
+            <strong>Mobile Number: </strong></Mobile>{{ user.mobile_number }}<br>
+            <strong>Description: </strong>{{ user.description }}<br>
+
+
+                
+        {% endif %}
+</div>
+</section>
+{% endblock %}

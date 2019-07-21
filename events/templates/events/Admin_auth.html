@@ -1,0 +1,18 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60">
+        <div class="container" style="margin-top:20px; margin-bottom:80px;"> 
+            <form action='.' method='POST'>{% csrf_token %}
+                <h3>Admin Login</h3><br>
+                {% if user_not_available == True %}
+                    <h1>Username and password is incorrect.</h1>
+                {% endif %}
+                {{ form.as_p }}
+                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
+                    <input class="btn confer-btn m-2"  style="border:2px solid purple;" type='submit' value='Submit'>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

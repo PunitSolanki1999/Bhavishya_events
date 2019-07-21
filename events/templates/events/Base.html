@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Bhavishya Events</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/logo1.png' %}">
+    <!-- lightbox css -->
+    <link rel='stylesheet' href="{% static 'css/lightbox.min.css' %}">
+    <!-- Stylesheet -->
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar justify-content-between" id="conferNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand" href="{% url 'events:home' %}" style="color:white">Bhavishya Events</a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+                        <!-- Menu Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="home"><a href="{% url 'events:home' %}">Home</a></li>
+                                <li class="services"><a href="{% url 'events:services' %}">Services</a></li>
+                                <li class="decoration"><a class href="{% url 'events:decoration' %}">Decoration</a></li>
+                               
+                                <li class="theme_party"><a href="{% url 'events:theme-party' %}">Theme Party</a></li>
+                                <li class="contact-us"><a href="{% url 'events:contact-us' %}">Contact Us</a></li>
+                            </ul>
+
+                            <!-- Get Tickets Button -->
+                            
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+    {% block content %}
+
+    replace me 
+
+    {% endblock %}
+
+
+    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0" >
+            <!-- Main Footer Area -->
+            <div class="main-footer-area">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Footer Widget Area -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Footer Logo -->
+                                <a href="#" class="footer-logo" style="color:white;
+                                font-size:22px;">Bhavishya Events</a>
+                                <p>We will make your Party Joyful and Memorable</p>
+    
+                                <!-- Social Info -->
+                                
+                            </div>
+                        </div>
+    
+                        <!-- Single Footer Widget Area -->
+                        <div class="col-12 col-sm-6 col-lg-3" >
+                            <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
+                                <!-- Widget Title -->
+                                <h5 class="widget-title"><a href="{% url 'events:contact-us' %}" style="color:white;">Contact</a></h5>
+    
+                                <!-- Contact Area -->
+                                <div class="footer-contact-info">
+                                    <p style="font-size:13px;"><i class="zmdi zmdi-map"></i> 5, Dewas Rd, New State Bank Colony, Mahashweta Nagar, Ujjain, Madhya Pradesh 456001</p>
+                                    <p style="font-size:13px;"><i class="zmdi zmdi-phone"></i> (+91) 8103282225</p>
+                                    <p style="font-size:13px;"><i class="zmdi zmdi-email"></i> bhavishyaevents.hr@gmail.com</p>
+                                    <p style="font-size:13px;"><i class="zmdi zmdi-globe"></i> www.#/DomainName/#.com</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+    
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copywrite Area -->
+            <div class="container">
+                <div class="copywrite-content">
+                    <div class="row">
+                        <!-- Copywrite Text -->
+                        <div class="col-12 col-md-6">
+                            <div class="copywrite-text">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Site is made by <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https://www.instagram.com/punit_solanki1999/" target="_blank">Punit Solanki</a> and Designed by<a href="https://www.instagram.com/akashjatwa__/" target="_blank"> Akash Jatwa</a>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                        <!-- Footer Menu -->
+                        <div class="col-12 col-md-6">
+                            <div class="footer-menu">
+                                <ul class="nav">
+                                    <li><a href="{% url 'events:admin-auth' %}"><i class="zmdi zmdi-circle"></i> Admin Login</a></li>
+                                    <li><a href="{% url 'events:terms-of-services' %}"><i class="zmdi zmdi-circle"></i> Terms of Service</a></li>
+                                    <li><a href="{% url 'events:privacy-policy' %}"><i class="zmdi zmdi-circle"></i> Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+    
+        <!-- **** All JS Files ***** -->
+        <!-- jQuery 2.2.4 -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Popper -->
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <!-- Bootstrap -->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- All Plugins -->
+        <script src="{% static 'js/confer.bundle.js' %}"></script>
+        <!-- Active -->
+        <script src="{% static 'js/default-assets/active.js' %}"></script>
+        <!-- lightbox js-->
+        <script src="{% static 'js/lightbox-plus-jquery.min.js' %}"></script>
+    </body>
+    
+    </html>

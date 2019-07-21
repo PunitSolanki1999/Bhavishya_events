@@ -1,0 +1,143 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <style>
+        .classy-nav-container .classy-navbar .classynav ul li.theme_party a {
+            color: #df42b1;
+        }
+        .image_name{
+            background-color:transparent;
+            border:0px;
+            text-decoration: None;
+            color:white;
+            font-size:20px;
+        }
+        .image_name:hover{
+            color:#df42b1;
+        }
+    </style>
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url({% static 'img/bg-img/3.jpg' %});">
+         
+        <form action='.' method='POST'>{%csrf_token%}
+                <div class="container" style="margin-top:40px; margin-bottom:100px;">
+                        <h5 style="font-size:13px; color:white; font-style:oblique; margin-bottom:15px;">[Click On The Name To see the Imagesof particular Field Party]</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/birthday_party.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class="image_name" type='submit' value="Birthday Party" name='Birthday Party'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                <!-- Thumb -->
+                                                <div class="speaker-single-thumb">
+                                                    <img src="{% static 'img/bg-img/101.jpeg' %}" alt="">
+                                                </div>
+                                                
+                                                <!-- Info -->
+                                                <div class="speaker-info">
+                                                        <input class="image_name" type='submit' value="Cocktail Party" name='Cocktail Party'>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                            <!-- Thumb -->
+                                            <div class="speaker-single-thumb">
+                                                <img src="{% static 'img/bg-img/kitty_party.jpg' %}" alt="">
+                                            </div>
+                                            
+                                            <!-- Info -->
+                                            <div class="speaker-info">
+                                                    <input class='image_name' type='submit' value='Kitty Party' name='Kitty Party'>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                            <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                        <!-- Thumb -->
+                                                        <div class="speaker-single-thumb">
+                                                            <img src="{% static 'img/bg-img/pool_party.jpg' %}" alt="">
+                                                        </div>
+                                                        
+                                                        <!-- Info -->
+                                                        <div class="speaker-info">
+                                                                <input class='image_name' type='submit' value='Pool Party' name='Pool Party'>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                            <!-- Thumb -->
+                                                            <div class="speaker-single-thumb">
+                                                                <img src="{% static 'img/bg-img/DJ_night.jpg' %}" alt="">
+                                                            </div>
+                                                            
+                                                            <!-- Info -->
+                                                            <div class="speaker-info">
+                                                                    <input class='image_name' type='submit' value='DJ Night' name='DJ Night'>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="col-12 col-md-6 col-lg-4">
+                                                            <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                                <!-- Thumb -->
+                                                                <div class="speaker-single-thumb">
+                                                                    <img src="{% static 'img/bg-img/bachlors_party.jpg' %}" alt="">
+                                                                </div>
+                                                                
+                                                                <!-- Info -->
+                                                                <div class="speaker-info">
+                                                                        <input class='image_name' type='submit' value='Bachelor Party' name='Bachlor Party'>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                        <div class="speaker-single-thumb">
+                                                            <img src="{% static 'img/bg-img/farewell_party.jpg' %}" alt="">
+                                                        </div>
+                                                        <div class="speaker-info">
+                                                            <input class='image_name' type='submit' value='Welcome and Farewell Party' name='Welcome and Farewell Party'>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                                                        
+                                                            <div class="speaker-single-thumb">
+                                                                <img src="{% static 'img/bg-img/fashion_show.jpg' %}" alt="">
+                                                            </div>
+
+                                                                        <div class="speaker-info">
+                                                                                <input class='image_name' type='submit' value='Fashion Show' name='Fashion Show'>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+            </div>
+            </div>
+            </form>
+        
+    </section>
+{% endblock %}

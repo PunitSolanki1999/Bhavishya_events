@@ -1,0 +1,141 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <style>
+        .classy-nav-container .classy-navbar .classynav ul li.decoration a {
+            color: #df42b1;
+        }
+        .image_name{
+            background-color:transparent;
+            border:0px;
+            text-decoration: None;
+            color:white;
+            font-size:20px;
+        }
+        .image_name:hover{
+            color:#df42b1;
+        }
+    </style>
+    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url({% static 'img/bg-img/3.jpg' %});">
+        
+        
+            <form action='.' method='POST'>{%csrf_token%}
+                    
+                    <div class="container" style="margin-top:40px; margin-bottom:100px;"> 
+                            <h5 style="font-size:13px; color:white; font-style:oblique; margin-bottom:15px;">[Click On The Name To see the Images of particular Field Party]</h5>
+                            <div class="row">
+                            
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/balloon_decoration.jpg' %}" alt="" >
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                            
+                                            <input class="image_name" type='submit' value="Balloon Decoration" name="Balloon Decoration">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                    
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/flower_decoration.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class='image_name' type='submit' value='Flower Decoration' name='Flower Decoration'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/mall_decoration.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class='image_name' type='submit' value='Mall Decoration' name='Mall Decoration'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+
+                    
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/showroom_decoration.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class='image_name' type='submit' value='Showroom Decoration' name='Showroom Decoration'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+
+                   
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/festival_decoration.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class='image_name' type='submit' value='Festival Decoration' name='Festival Decoration'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+
+
+                   
+                            <!-- Single Speaker Area -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                                    <!-- Thumb -->
+                                    <div class="speaker-single-thumb">
+                                        <img src="{% static 'img/bg-img/stage_decoration.jpg' %}" alt="">
+                                    </div>
+                                    
+                                    <!-- Info -->
+                                    <div class="speaker-info">
+                                            <input class='image_name' type='submit' value='Stage Decoration' name='Stage Decoration'>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        </div>
+                    </div>
+            </form>
+        
+    </section>
+{% endblock %}

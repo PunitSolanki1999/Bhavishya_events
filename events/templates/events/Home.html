@@ -1,0 +1,228 @@
+{% extends 'events/Base.html' %}
+{% block content %}
+{% load staticfiles %}
+    <style>
+        .classy-nav-container .classy-navbar .classynav ul li.home a {
+            color: #df42b1;
+        }
+    </style>
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+            <div class="welcome-slides owl-carousel">
+                <!-- Single Slide -->
+                <div class="single-welcome-slide bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/home_image.jpg' %});">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-right">
+                                    <h2 data-animation="fadeInUp" data-delay="300ms">Bhavishya Events</h2>
+                                    <h6 data-animation="fadeInUp" data-delay="500ms">We will make your Party Joyful and Memorable</h6>
+                                    <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Single Slide -->
+                
+            </div>
+    
+            <!-- Scroll Icon -->
+            <div class="icon-scroll" id="scrollDown"></div>
+        </section>
+        <!-- Welcome Area End -->
+    
+        <!-- About Us And Countdown Area Start -->
+        <section class="about-us-countdown-area section-padding-100-0" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- About Content -->
+                    <div class="col-12 col-md-6">
+                        <div class="about-content-text mb-80">
+                            <h6 class="wow fadeInUp" data-wow-delay="300ms">Services</h6>
+                            <ul class="wow fadeInUp" data-wow-delay="300ms" style="color:white; margin-left:15px;">
+                                <li style="list-style:disc; ">Mehendi and Parlour Services</li>
+                                <li style="list-style:disc; ">Varieties of Setup</li>
+                                <li style="list-style:disc; ">Car and Baggi Decoration</li>
+                                <li style="list-style:disc; ">Special Effects</li>
+                                <li style="list-style:disc; ">Photography and Videography</li>
+                                <li style="list-style:disc; ">Bride Groom Entry Setup</li>
+                                <li style="list-style:disc; ">And Many More</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+    
+                    <!-- About Thumb -->
+                    <div class="col-12 col-md-6">
+                        <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
+                            <img src="{% static 'img/bg-img/service.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                            <a class="btn confer-btn-white" href="{% url 'events:services' %}">Know More About Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Counter Up Area -->
+            
+        </section>
+        <!-- About Us And Countdown Area End -->
+    
+        <!-- Our Speakings Area Start -->
+        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url({% static 'img/bg-img/3.jpg' %});">
+            <div class="container">
+                <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12">
+                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+                            <p>Decoration</p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/decoration_1.jpg' %}" alt="">
+                            </div>
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Balloon Decaoration for Birthday Party</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/decorationn_2.jpg' %}" alt="">
+                            </div>
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Flower Decoration For Marriage Events</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/decoration_3.jpg' %}" alt="">
+                            </div>
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Stage Decoration For Reception</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Speaker Area -->
+                    
+    
+                    <div class="col-12">
+                        <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                            <a class="btn confer-btn-white" href="{% url 'events:decoration' %}">See More Images of Decoration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <!--Theme Party-->
+        <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url({% static 'img/bg-img/3.jpg' %});">
+            <div class="container">
+                <div class="row">
+                    <!-- Heading -->
+                    <div class="col-12">
+                        <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
+                            <p>Theme Party</p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/theme_party_1.jpg' %}" alt="">
+                            </div>
+                            <!-- Social Info -->
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Mickey Mouse Theme Party</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/theme_party_2.jpg' %}" alt="">
+                            </div>
+                            <!-- Social Info -->
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Love Theme Party</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Speaker Area -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
+                            <!-- Thumb -->
+                            <div class="speaker-single-thumb">
+                                <img src="{% static 'img/bg-img/theme_party_3.jpg' %}" alt="">
+                            </div>
+                            <!-- Social Info -->
+                            
+                            <!-- Info -->
+                            <div class="speaker-info">
+                                <h5 style="font-size:15px;">Jungle Theme Party</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+    
+                    <div class="col-12">
+                        <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
+                            <a class="btn confer-btn-white" href="{% url 'events:theme-party' %}">See More Images of Theme Parties</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Speakings Area End -->
+
+
+{% endblock %}
+
